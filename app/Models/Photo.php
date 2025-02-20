@@ -17,4 +17,8 @@ class Photo extends Model
     public function user(){
         return $this->hasOne(User::class, 'photo_id');
     }
+
+    public function blog(){
+        return $this->hasOne(Blog::class, 'photo_id');
+    }
 }

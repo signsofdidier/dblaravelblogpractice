@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,7 @@ Route::get('/', function () {
 Route::group(['prefix'=>'backend','middleware'=>'auth'],function(){
     Route::resource('/users', UserController::class);
     Route::patch('/users/{id}/restore', [UserController::class, 'restore'])->name('users.restore');
+    Route::resource('/blogs', BlogController::class);
 });
 
 Route::get('/backend', function () {

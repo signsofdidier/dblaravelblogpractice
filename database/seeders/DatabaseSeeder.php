@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             PhotoSeeder::class,
             UsersTableSeeder::class,
             UsersRolesTableSeeder::class,
+            BlogsTableSeeder::class,
         ]);
     }
 }

@@ -25,8 +25,4 @@ class Blog extends Model
     public function photo(){
         return $this->belongsTo(Photo::class);
     }
-
-    public function categories(){
-        return $this->belongsToMany(Category::class, 'category_blog', 'blog_id', 'category_id' );
-    }
 }

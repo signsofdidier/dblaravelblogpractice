@@ -16,7 +16,7 @@ class CategorySeeder extends Seeder
         //
         DB::table('categories')->insert([
             [
-                'name' => 'lifestile',
+                'name' => 'lifestyle',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

@@ -7,7 +7,7 @@
 @section('charts')
 @endsection
 @section('content')
-    {{--@include('layouts.partials.flash_message')--}}
+    @include('layouts.partials.flash_message')
     <!-- Update Form: Dit formulier omvat alle invoervelden en de foto-upload -->
     <form id="updateForm" method="POST" action="{{ action('App\Http\Controllers\UserController@update', $user->id) }}" enctype="multipart/form-data">
         @csrf

@@ -18,12 +18,12 @@
                         <a class="nav-link" href="{{ Route('users.create') }}">Create User</a>
                     </nav>
                 </div>
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUsers" aria-expanded="false" aria-controls="collapseUsers">
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBlogs" aria-expanded="false" aria-controls="collapseBlogs">
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
                     Blogs
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
-                <div class="collapse" id="collapseUsers" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <div class="collapse" id="collapseBlogs" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="{{ Route('blogs.index') }}">All Blogs</a>
                         <a class="nav-link" href="{{ Route('blogs.create') }}">Create Blog</a>

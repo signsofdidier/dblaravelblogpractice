@@ -21,6 +21,7 @@ return new class extends Migration
             //category veel op veel
             $table->text('description');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

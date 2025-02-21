@@ -18,6 +18,7 @@ Route::group(['prefix'=>'backend','middleware'=>'auth'],function(){
     Route::resource('/users', UserController::class);
     Route::patch('/users/{id}/restore', [UserController::class, 'restore'])->name('users.restore');
     Route::resource('/blogs', BlogController::class);
+    Route::patch('/blogs/{id}/restore', [BlogController::class, 'restore'])->name('blogs.restore');
 });
 
 Route::get('/backend', function () {

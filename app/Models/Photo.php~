@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Photo extends Model
+{
+    /** @use HasFactory<\Database\Factories\PhotoFactory> */
+    use SoftDeletes;
+    protected $fillable = [
+        'path',
+        'alternate_text'
+    ];
+
+
+    public function user(){
+        return $this->hasOne(User::class, 'photo_id');
+    }
+
+    public function blog(){
+        return $this->hasOne(Blog::class, 'photo_id');
+    }
+}
